@@ -33,3 +33,7 @@ var node = {
 var {loc: {start: {line}}} = node;
 console.log(line);
 
+let obj1 = {};
+let arr = [];
+({foo: obj1.prop, bar: arr[0]} = {foo:123, bar: true});
+console.log(obj1, arr);
